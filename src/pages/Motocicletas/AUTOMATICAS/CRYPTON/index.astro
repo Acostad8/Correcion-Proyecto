@@ -1,0 +1,37 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Motocicleta from "../../../../components/motocicleta.astro";
+import Barrra from "../../../../components/barrra.astro";
+import Banner from "../../../../components/banner.astro";
+
+
+---
+
+<Layout>
+
+    <Banner flecha isHeigth>
+        <div class=" w-auto h-[530px] bg-[url('https://www.yamotos.com.co/assets/img/BANNER-crypton2025%20%282%29.jpg')] bg-center bg-[length(100%_100%)]"
+                slot="imagen">
+        </div>
+    </Banner>
+
+    <Barrra>
+        <a href="/Motocicletas/AUTOMATICAS" slot="categoria">Automaticas y Semiautomaticas</a>
+        <h1 slot="moto">CRYPTON</h1>
+    </Barrra>
+
+    <Motocicleta botones3 >
+        <div slot="imagen" class="px-40 h-[500px] w-[550px] bg-[url('https://www.yamotos.com.co/assets/img/crypton-amarilloo.png')] bg-center bg-[length[100%_100%]]"></div>
+        <h1 slot="marca">malo h</h1>
+        <h1 slot="madelo"> MOD 2025</h1>
+        <h1 slot="precio">$8.500.000</h1>
+
+            <div slot="color1" class="bg-blue-700  size-10 rounded-full"></div>
+            <div slot="color2" class="bg-fuchsia-800 size-10 rounded-full"></div>
+            <div slot="color3" class="bg-yellow-400  size-10 rounded-full"></div>
+
+    </Motocicleta>
+
+    
+
+</Layout>

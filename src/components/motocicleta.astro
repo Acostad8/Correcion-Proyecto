@@ -1,0 +1,87 @@
+---
+import { Icon } from "astro-icon/components"
+const { botones3 = false } =  Astro.props;
+const { botones1 = false } = Astro.props;
+
+
+---
+
+<div class="ml-[150px] h-[550px] flex items-center justify-center">
+    <div class="grid grid-cols-2">
+        <slot name="imagen"></slot>
+       
+
+        <div class="w-[280px] px-5">
+            <div class="text-[40px] text-[#ED1744] font-bold"><slot name="marca"></slot> </div>
+            <div class="text-[20px] text-[#0D2B85] font-bold"><slot name="madelo"></slot></div>
+            <div class="text-[32px] text-[#212529] font-bold"><slot name="precio"></slot></div>
+            <div class="text-[16px]">IVA incluido</div>
+            <div class="mt-5 text-[16px] text-[#6C757D]">Colores</div>
+
+            <div class="flex py-2 space-x-2">
+
+               
+                <a href=""  class="rounded-full bg-red-800 border-[2px] border-gray-400 hover:border-[#ED1744] duration-300">
+                    <slot name="color1"></slot>
+                </a>
+                <a href=""  class="rounded-full bg-red-800 border-[2px] border-gray-400 hover:border-[#ED1744] duration-300">
+                    <slot name="color2"></slot>
+                </a>
+                <a href=""  class="rounded-full bg-red-800 border-[2px] border-gray-400 hover:border-[#ED1744] duration-300">
+                    <slot name="color3"></slot>
+                </a>
+                <a href=""  class="rounded-full bg-red-800 border-[2px] border-gray-400 hover:border-[#ED1744] duration-300"
+                class:list={{ " hidden " : botones3}}>
+                    
+                    <slot name="color4"></slot>
+                </a>
+                <a href="" slot="color5" class="rounded-full bg-red-800 border-[2px] border-gray-400 hover:border-[#ED1744] duration-300"
+                class:list={{ " hidden " : botones3}}>
+                    <slot name="color5"></slot>
+                </a>
+
+            </div>
+
+
+
+            <div class="py-4">
+                <a
+                    href="#"
+                    class="text-[16px] hover:cursor-pointer text-base items-center rounded-3xl py-2 px-4 text-white inline-flex bg-[#ED1744] hover:bg-white border-[1px] border-[#ED1744] hover:text-[#ED1744]
+                     transition duration-500"
+                >
+                    QUIERO UN ASESOR
+                </a>
+            </div>
+            
+            <div>
+                <a
+                    href="#"
+                    class="text-[16px] hover:cursor-pointer text-base items-center rounded-3xl py-2 px-4 text-white inline-flex bg-[#ED1744] hover:bg-white border-[1px] border-[#ED1744] hover:text-[#ED1744]
+                    transition duration-500"
+                >
+                    SIMULAR CREDITO
+                </a>
+            </div>
+
+            <div class=" flex gap-2 py-4 px-4">
+                <h1 class="text-[24px] text-[#212529] font-bold">Comparir:</h1>
+                <div class="flex gap-2">
+            
+                    <a href="https://api.whatsapp.com/send?text=%20https://yamotos.com.co/vehiculos/crypton-fi" target="_blank" class="rounded-full">
+                        <div class="rounded-full bg-[#3ad019] size-10 flex justify-center items-center  hover:border-[#ED1744]">
+                            <Icon name="mdi:whatsapp" class="text-white w-[20px] h-[20px]"/>
+                        </div>
+                    </a>
+            
+                    <a href="https://api.whatsapp.com/send?text=%20https://yamotos.com.co/vehiculos/crypton-fi" target="_blank" class="rounded-full">
+                        <div class="rounded-full bg-[#1284e3] size-10 flex justify-center items-center  hover:border-[#ED1744]">
+                            <Icon name="mdi:whatsapp" class="text-white w-[20px] h-[20px]"/>
+                        </div>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

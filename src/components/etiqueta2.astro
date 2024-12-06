@@ -1,0 +1,24 @@
+---
+const { cuadricula = false } = Astro.props
+---
+<div class="h-[315px] w-[275px]"
+class:list={{"bg-transparent" : cuadricula}}>
+
+        <slot name="imagen"></slot>
+        <div class="flex w-[315px]">
+            <div
+                class="text-center text-[#0D2B85] text-[24px] font-bold mx-auto"
+                ><slot name="link"></slot>
+            </div>
+        </div>
+        <div class="flex w-[315px]">
+            <div
+                
+            class="mx-auto text-[16px] my-3 items-center rounded-[5px] py-1 px-2 text-white inline-flex bg-[#ED1744] hover:bg-white border-[1px] hover:border-[#ED1744] hover:text-[#ED1744] duration-500"
+            class:list={{ "hidden" : cuadricula}}
+            >
+                <slot name="boton"></slot>
+            </div>
+        </div>
+
+</div>

@@ -1,0 +1,64 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Motocicleta from "../../../components/motocicleta.astro";
+import Barrra from "../../../components/barrra.astro";
+import Banner from "../../../components/banner.astro";
+import Barra from "../../../components/barrra.astro"
+import Etiqueta2 from "../../../components/etiqueta2.astro";
+import Contacto from "../../../components/contacto.astro";
+---
+
+<Layout>
+    <Banner flecha>
+            
+        <div class=" w-auto h-[530px] bg-[url('https://cdn-tp3.mozu.com/27878-44719/cms/files/a85de969-f98e-4e13-abf2-ce5890615015?quality=60&_mzcb=_1728678549839')] bg-center bg-[length(100%_100%)]"
+            slot="imagen">
+        </div>
+        <h1 slot="titulo">TODOTERRENO</h1>
+    </Banner>
+    
+    <Barra noHover>
+    <a href="/Motocicletas/URBANAS" slot="categoria">Todoterreno</a>
+    </Barra>
+
+
+    <div class="container mx-auto h-[400px]">
+        <div class="py-20 flex gap-5 justify-center">
+            <Etiqueta2>
+
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/xtz125-azul.png')] bg-center bg-[length:100%_100%]">
+                
+                </div>
+                <a href="" slot="link">XTZ 125</a>
+                <a href="/Motocicletas/AUTOMATICAS/CRYPTON" slot="boton">VER MAS</a>
+            
+            </Etiqueta2>
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/xtz150-azul-categ.png')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">XTZ 150</a>
+            <a href="/Motocicletas/AUTOMATICAS/NMAX" slot="boton">VER MAS</a>
+        </Etiqueta2>
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/xtz150-azul-categ.png')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">XTZ 250</a>
+            <a href="" slot="boton">VER MAS</a>
+        </Etiqueta2>
+
+        <Etiqueta2 cuadricula>
+            
+        </Etiqueta2>
+    </div>
+</div>    
+  
+
+<Contacto></Contacto>
+
+
+
+
+
+</Layout>

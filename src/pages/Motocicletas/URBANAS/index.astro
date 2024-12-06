@@ -1,0 +1,85 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Motocicleta from "../../../components/motocicleta.astro";
+import Barrra from "../../../components/barrra.astro";
+import Banner from "../../../components/banner.astro";
+import Barra from "../../../components/barrra.astro"
+import Etiqueta2 from "../../../components/etiqueta2.astro";
+import Contacto from "../../../components/contacto.astro";
+---
+
+<Layout>
+    <Banner flecha>
+            
+        <div class=" w-auto h-[530px] bg-[url('https://cdn-tp3.mozu.com/27878-44719/cms/files/a85de969-f98e-4e13-abf2-ce5890615015?quality=60&_mzcb=_1728678549839')] bg-center bg-[length(100%_100%)]"
+            slot="imagen">
+        </div>
+        <h1 slot="titulo">Urbanas y Trabajo</h1>
+    </Banner>
+    
+    <Barra noHover>
+    <a href="/Motocicletas/URBANAS" slot="categoria">Urbanas y Trabajo</a>
+    </Barra>
+
+
+    <div class="container mx-auto h-[400px]">
+        <div class="py-20 flex gap-5 justify-center">
+            <Etiqueta2>
+
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/ycz-gris.png')] bg-center bg-[length:100%_100%]">
+                
+                </div>
+                <a href="" slot="link">YCZ 110</a>
+                <a href="/Motocicletas/AUTOMATICAS/CRYPTON" slot="boton">VER MAS</a>
+            
+            </Etiqueta2>
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/ybrz-gris.png')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">YBR Z</a>
+            <a href="/Motocicletas/AUTOMATICAS/NMAX" slot="boton">VER MAS</a>
+        </Etiqueta2>
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/szrr-negra.jpg')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">SZ15 RR</a>
+            <a href="" slot="boton">VER MAS</a>
+        </Etiqueta2>
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/fz-negra.png')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">FZS</a>
+            <a href="" slot="boton">VER MAS</a>
+        </Etiqueta2>
+    </div>
+</div>    
+<div class="container mx-auto h-[500px]">
+    <div class="py-20 flex gap-5 justify-center">
+
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/fz25-azul.jpg')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">FZ 25</a>
+            <a href="" slot="boton">VER MAS</a>
+        </Etiqueta2>
+        <Etiqueta2>
+            <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/fz150-A3.0%201%20COLOR%20AZUL.png')] bg-center bg-[length:100%_100%]">
+            </div>
+            <a href="" slot="link">FZ 150 A 3.0</a>
+            <a href="" slot="boton">VER MAS</a>
+        </Etiqueta2>
+        <Etiqueta2 cuadricula></Etiqueta2>
+        <Etiqueta2 cuadricula></Etiqueta2>
+    </div>
+</div>    
+
+<Contacto></Contacto>
+
+
+
+
+
+</Layout>

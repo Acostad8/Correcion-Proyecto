@@ -1,0 +1,33 @@
+---
+const { Nomoto = false } = Astro.props;
+const { noHover = false } = Astro.props;
+
+---
+
+
+<div class="flex h-[50PX] bg-[#EEEEEE]">
+    <div class="flex items-center space-x-3">
+        <a
+            href="/Motocicletas"
+            class="ps-36 text-[16px] text-black hover:text-[#ED1744]"
+            >Categorias
+        </a>
+
+        <h6>></h6>
+
+        <div
+            class="text-[16px] text-black hover:text-[#ED1744] hover:cursor-pointer"
+            class:list={{ "text-[16px] text-gray-400 hover:text-gray-400 hover:cursor-default" : noHover}};
+            > <slot name="categoria"></slot>
+        </div>
+
+
+        <div class="text-[#6c757d]"
+            class:list={{ "hidden" : Nomoto}}>
+            
+            <slot name="moto"></slot>
+
+        </div>
+
+    </div>
+</div>

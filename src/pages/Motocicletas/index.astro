@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Banner from "../../components/banner.astro";
+import Etiqueta from "../../components/etiqueta.astro";
+
+
+
+---
+
+<Layout title="Motociletas">
+    <Banner>
+        <h1 slot="titulo">CATEGORIAS</h1>
+    </Banner>
+
+    <div
+        class="container mx-auto flex justify-center items-center gap-[480px] mt-20 p-4"
+    >
+        <div class="ml-7">
+            <h1 class="font-bold text-[#D00707] text-[32px]">
+                Selecciona una Categoria
+            </h1>
+        </div>
+        <div class="text-right">
+            <a
+                href="/Motos/ListaMotos"
+                class="text-[16px] my-3 items-center rounded-[5px] py-2 px-4 text-white inline-flex bg-[#ED1744] hover:bg-white hover:border-[1px] hover:border-[#ED1744] hover:text-[#ED1744] duration-500"
+            >
+                VER TODAS LAS MOTOS
+            </a>
+        </div>
+    </div>
+
+
+    <div class="h-96 flex items-center gap-3  justify-center">
+
+        <Etiqueta>
+            <div slot="imagen" class=" absolute rounded-xl h-[270px] w-[310px] bg-cover bg-[url('https://www.yamotos.com.co/assets/img/cripton2025%20fondo1%20%281%29.jpg')]"></div>            
+            <a slot="link"   href="/Motocicletas/AUTOMATICAS" class="absolute flex items-center justify-center mx-auto h-[270px] w-[310px]  text-[24px] font-bold"> ver categorias...</a>
+            <a href="/Motocicletas/AUTOMATICAS" slot="categoria">Automaticas y Semiatumaticas</a>
+        </Etiqueta>
+
+        <Etiqueta>
+            <div slot="imagen" class="absolute rounded-xl h-[270px] w-[310px] bg-cover bg-[url('https://www.yamotos.com.co/assets/img/cat-trabajo.jpg')]"></div>            
+                <a slot="link"  href="" class="flex items-center justify-center mx-auto h-[270px] w-[310px]  absolute text-[24px] font-bold"> ver categorias...</a>
+            <a href="/Motocicletas/URBANAS" slot="categoria">Urbanas y Trabajo</a>
+        </Etiqueta>
+
+        <Etiqueta>
+            <div slot="imagen" class="absolute rounded-xl h-[270px] w-[310px] bg-cover bg-[url('https://www.yamotos.com.co/assets/img/cat-todo.jpg')]"></div>            
+            <a slot="link"  href="" class="flex items-center justify-center mx-auto h-[270px] w-[310px]  absolute text-[24px] font-bold"> ver categorias...</a>
+            <a href="/Motocicletas/TODOTERRENO" slot="categoria">Todoterreno</a>
+        </Etiqueta>
+        
+
+        
+    </div>
+
+
+
+</Layout>

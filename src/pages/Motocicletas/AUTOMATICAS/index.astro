@@ -1,0 +1,76 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Banner from "../../../components/banner.astro";
+import Barra from "../../../components/barrra.astro"
+import Etiqueta2 from "../../../components/etiqueta2.astro";
+import Contacto from "../../../components/contacto.astro";
+
+---
+
+<Layout title="Automaticas">
+
+    <Banner flecha>
+            
+            <div class=" w-auto h-[330px] bg-[url('https://cdn-tp3.mozu.com/27878-44719/cms/files/a85de969-f98e-4e13-abf2-ce5890615015?quality=60&_mzcb=_1728678549839')] bg-center bg-[length(100%_100%)]"
+                slot="imagen">
+            </div>
+            <h1 slot="titulo">AUTOMATICAS Y SEMIAUTOMATICAS</h1>
+    </Banner>
+
+    <Barra noHover >
+        <div slot="categoria">Automaticas y Semiautomaticas</div>
+    </Barra>
+
+
+    <div class="container mx-auto h-[400px]">
+        <div class="py-20 flex gap-5 justify-center">
+            <Etiqueta2>
+
+                    <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/crypton-amarilloo.png')] bg-center bg-[length:100%_100%]">
+                    
+                    </div>
+                    <a href="" slot="link">CRYPTON FI</a>
+                    <a href="/Motocicletas/AUTOMATICAS/CRYPTON" slot="boton">VER MAS</a>
+                
+            </Etiqueta2>
+
+            <Etiqueta2>
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/nmax-connect-negra.png')] bg-center bg-[length:100%_100%]">
+                </div>
+                <a href="" slot="link">NMAX CONECTED</a>
+                <a href="/Motocicletas/AUTOMATICAS/NMAX" slot="boton">VER MAS</a>
+            </Etiqueta2>
+
+            <Etiqueta2>
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/XMAX-2023-Negramate.jpg')] bg-center bg-[length:100%_100%]">
+                </div>
+                <a href="" slot="link">XMAX 300</a>
+                <a href="" slot="boton">VER MAS</a>
+            </Etiqueta2>
+
+            <Etiqueta2>
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/tmax-negra.png')] bg-center bg-[length:100%_100%]">
+                </div>
+                <a href="" slot="link">TMAX TECHMAX</a>
+                <a href="" slot="boton">VER MAS</a>
+            </Etiqueta2>
+        </div>
+    </div>    
+    <div class="container mx-auto h-[500px]">
+        <div class="py-20 flex gap-5 justify-center">
+
+            <Etiqueta2>
+                <div slot="imagen" class="w-[300px] h-[260px] rounded-xl bg-[url('https://www.yamotos.com.co/assets/img/aerox155-blanca.png')] bg-center bg-[length:100%_100%]">
+                </div>
+                <a href="" slot="link">AEROX</a>
+                <a href="" slot="boton">VER MAS</a>
+            </Etiqueta2>
+            <Etiqueta2 cuadricula></Etiqueta2>
+            <Etiqueta2 cuadricula></Etiqueta2>
+            <Etiqueta2 cuadricula></Etiqueta2>
+        </div>
+    </div>    
+
+    <Contacto></Contacto>
+
+</Layout>
